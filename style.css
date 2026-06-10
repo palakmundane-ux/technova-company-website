@@ -1,0 +1,397 @@
+css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef4ff;
+    color:#1f2937;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#1f2937;
+    font-size:17px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(rgba(37,99,235,0.65),rgba(15,23,42,0.65)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:62px;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero p{
+    font-size:21px;
+    margin-bottom:35px;
+    max-width:700px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+/* ================= BUTTONS ================= */
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(37,99,235,0.25);
+}
+
+.btn-secondary{
+    background:white;
+    color:#2563eb;
+}
+
+/* ================= COMMON SECTIONS ================= */
+
+.stats,
+.features,
+.services-preview,
+.testimonials,
+.cta,
+.contact-section{
+    background:#eef4ff;
+}
+
+section{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.stats h2{
+    color:#2563eb;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.stats p{
+    color:#6b7280;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:80px 30px;
+}
+
+.feature-card{
+    width:320px;
+    background:white;
+    border-radius:16px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(37,99,235,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.feature-card p{
+    color:#6b7280;
+}
+
+/* ================= SERVICES ================= */
+
+.services-preview{
+    padding:90px 40px;
+    text-align:center;
+}
+
+.services-preview h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.service-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.service-box{
+    width:300px;
+    background:white;
+    border-radius:16px;
+    border:1px solid #dbeafe;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(37,99,235,0.08);
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+}
+
+.service-box h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.service-box p{
+    color:#6b7280;
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials{
+    padding:90px 40px;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.testimonial{
+    width:350px;
+    background:white;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(37,99,235,0.08);
+}
+
+.testimonial h4{
+    margin-top:15px;
+    color:#2563eb;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 30px;
+    color:#6b7280;
+    font-size:19px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    padding:80px 30px;
+}
+
+.contact-info,
+.contact-form-box{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(37,99,235,0.08);
+}
+
+.contact-info h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    color:#6b7280;
+}
+
+.contact-form-box form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form-box input,
+.contact-form-box textarea{
+    margin-bottom:15px;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.contact-form-box textarea{
+    resize:none;
+}
+
+.contact-form-box button{
+    width:100%;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:0;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:15px;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero{
+        min-height:70vh;
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .stats{
+        flex-direction:column;
+    }
+
+    .feature-card,
+    .service-box,
+    .testimonial,
+    .contact-info,
+    .contact-form-box{
+        width:90%;
+    }
+}
